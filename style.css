@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none; 
+    list-style: none;
+    font-family: 'Roboto', sans-serif;   
+    border: 0;
+    color: inherit;
+}
+
+/*GENERALES*/
+
+body{
+    background-color: #F1F1F1;
+  
+}
+
+li {
+    display: inline;
+}
+
+h1{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+h2{
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+h3{
+    padding-bottom: 10px;
+}
+
+p{
+    padding-bottom: 1rem;
+}
+
+.boton{
+    border: 1px solid black ;
+    background-color: black;
+    color: #f7cd58;
+    max-width: fit-content;
+    max-height: fit-content;
+    border-radius: 15px;
+    padding: 5px 10px;
+ }
+
+ .boton:hover{
+    background-color: #F1F1F1;
+    color: black;
+ }
+
+ .botonVolver{
+    height: 16px; 
+ }
+
+
+
+/*HEADER*/
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999999;
+}
+
+.logo{
+    padding-right: 15px;
+    height: 30px;
+    width: 30px;
+   
+}
+
+.logo a img{
+    height: 60px;
+    width: 60px;
+}
+
+.header {
+    background-color: #f7cd58;
+    width: 100%;
+    padding: 10px 100px;
+}
+
+.header nav{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.header nav ul {
+    justify-content: space-between;
+}
+
+header div nav ul li{
+    padding-right: 40px; 
+}
+
+header div nav ul li a:hover{
+    background-color: rgba(247, 228, 107, 1);
+    ;
+}
+
+.itemMesa{
+    grid-area: itemMesa;
+}
+
+.itemCartas{
+    grid-area: itemCartas;
+}
+
+.itemComprar{
+    grid-area: itemComprar; 
+}
+
+.itemContacto{
+    grid-area: itemContacto;
+}
+
+/*INDEX*/
+
+.logoEscrito{
+    width: 100%;
+    height: 600px;
+    background-color:#f7cd58 ;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+#fotosInicio{
+    display: flex;
+    justify-content: center;
+    border-color: black;
+    background-color: #F1F1F1;
+    color: black;
+    text-align: center;
+    width: 100%;
+    height: 500PX;
+    padding: 4rem 3rem 4rem 3rem;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "img1 img1 img2"
+    "img3 img4 img4"
+    "img5 img5 img6";
+}
+
+#img1{
+    background: url(images/conceptuales/concepto-catan.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: img1;
+}
+
+#img2{
+    background: url(images/conceptuales/concepto-uno.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: img2;
+}
+
+#img3{
+    background: url(images/conceptuales/concepto-say-my-name.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: img3;
+}
+
+#img4{
+    background: url(images/conceptuales/concepto-atenea.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: img4;
+}
+
+#img5{
+    background: url(images/conceptuales/concepto-erudito.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: img5;
+}
+
+
+#img6{
+    background: url(images/conceptuales/concepto-trivial.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: img6;
+}
+
+/*CONTENEDOR JUEGOS EN PAGINAS EN MENU GENERALES*/
+
+.imagenJuego{      /*IMAGEN CUADRADA*/
+    height: 150px;
+    width: 150px;
+}
+
+.juegos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+}
+
+.juegos div{
+    max-height: fit-content;
+    width: 2s00px;
+    background-color: #f7cd58;
+    border: 3px solid black;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+/*SUBPAGINAS DE COMO COMPRAR*/
+
+.contenido{
+    max-width: fit-content;
+    max-height: fit-content;
+    background-color: #f7cd58;
+    border: 3px solid black;
+    color: black;
+    padding: 10px;
+    text-align: left;
+    border-radius: 015px;
+}
+
+.sectionComoComprar{
+    padding-bottom: 1rem;
+}
+
+/*MEDIOS DE PAGO*/
+
+main section div img{
+    height: 100px;
+    width: 100px;
+}
+
+/*PAGINA CONTACTO*/
+
+.iconos{
+    height: 30px;
+    width: 30px;
+}
+
+/*PAGINAS CADA JUEGO*/
+
+.todoJuegos{
+    display: flex;
+}
+
+.todoJuegos h1{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 0;
+}
+
+.todoJuegos p{
+    padding-top: 1rem;
+}
+
+.cajaIzquierda{
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    width: 500px;
+}
+
+.cajaDerecha{
+    height: 500px;
+    width: 500px;
+}
+
+.circulo{
+    height: 300px;
+    width: 300px;
+    background-color: #f7cd58;
+    border-radius: 50%;
+}
+
+.cajaJuego{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+}
+
+.cajaIzquierda{
+    grid-area: cajaIzquierda;
+}
+
+.cajaDerecha{
+    grid-area: cajaDerecha;
+}
+
+.todoJuegos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "cajaIzquierda cajaDerecha"
+}
+
+/*SECCION OTROS JUEGOS*/
+
+.otrosJuegos{
+    display: flex;
+    flex-direction: row;
+}
+
+/*FOOTER*/
+
+footer{
+    display: flex;
+    background-color: #f7cd58;
+    font-size: small;
+    justify-content: space-between;
+    padding: 50px 100px;
+    width: 100%;
+}
+
+footer img{
+    height: 30px;
+    width:  30px;
+}
+
+footer div nav ul li{
+   padding-right: 0.5rem;
+}
+
+.botonCoder:hover{
+    background-color: rgba(247, 228, 107, 1);
+}
+
+
+.newletter{
+    grid-area: newsletter;
+}
+
+.redesSociales{
+    grid-area: redesSociales;
+}
+
+.misDatos{
+    grid-area: misDatos;
+}
+
+/* RESPONSIVE */
+ 
+/*HEADER*/
+
+@media (max-width: 965px){
+    header div nav ul{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "itemMesa"
+        "itemCartas"
+        "itemComprar"
+        "itemContacto";
+    }
+
+    header{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    header div nav ul li{
+        padding: 0rem;
+    }
+}
+
+/*INDEX*/
+
+@media (max-width: 800px) {
+    #fotosInicio{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "img1 img1 img1"
+    "img4 img4 img4"
+    "img5 img5 img5"
+    "img2 img3 img6";}
+}
+
+/*CADA JUEGO*/
+
+@media (max-width: 1115px){
+    .todoJuegos{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "cajaIzquierda"
+        "cajaDerecha";
+    }
+
+    .cajaIzquierda{
+        width: 100%;
+    }
+
+    .cajaDerecha{
+        width: 100%;
+        padding: 5rem;
+    }
+}
+
+/*FOOTER*/
+ 
+@media (max-width: 850px){
+
+    footer{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "newsletter"
+        "redesSociales"
+        "misDatos" ;
+    }
+}
+
+
